@@ -14,25 +14,24 @@
 </head>
 
 <body>
-  <!-- NOTE - The actual code is a little different from what you see in the video, I have added here bootstrap to make the UI look clean. -->
   <div class="container mt-5">
     <!-- Code starts from here -->
-    <form id="loginForm" class="form-group">
-      <div class="form-group">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" class="form-control" />
-      </div>
-      <div class="form-group">
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" class="form-control" />
-      </div>
-      <button type="submit" class="btn btn-primary">Login</button>
-    </form>
+    <!-- Search input -->
+    <input type="text" id="searchInput" class="form-control" placeholder="Search...">
+    <ul id="itemList" class="list-group mt-3">
+      <li class="list-group-item">Apple</li>
+      <li class="list-group-item">Banana</li>
+      <li class="list-group-item">Cherry</li>
+      <li class="list-group-item">Date</li>
+      <li class="list-group-item">Elderberry</li>
+      <li class="list-group-item">Fig</li>
+      <li class="list-group-item">Grape</li>
+    </ul>
     <!-- Code ends here -->
   </div>
 
   <div class="container social mt-5">
-    <a href="https://www.instagram.com/reel/DEcPl7kTyPl/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+    <a href="https://www.instagram.com/reel/DEmu5wlzQnU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
       target="_blank" class="btn btn-outline-primary">
       <i class="fab fa-instagram"></i> Watch Instagram Video
     </a>
@@ -45,7 +44,7 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="main.js"></script>
+  <script src="./main.js"></script>
 </body>
 
 </html>
