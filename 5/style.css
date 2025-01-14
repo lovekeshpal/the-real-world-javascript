@@ -1,0 +1,9 @@
+.countdown {
+  text-align: left;
+  margin-top: 20px;
+}
+
+#timer {
+  font-size: 2em;
+  font-weight: bold;
+}
