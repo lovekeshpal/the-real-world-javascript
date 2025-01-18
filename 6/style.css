@@ -1,0 +1,13 @@
+/* Initial state of the sticky header (hidden) */
+.sticky-header {
+  position: fixed;
+  top: -100px; /* Hide the header initially */
+  width: 1110px;
+  transition: top 0.3s;
+  z-index: 1000; /* Ensure it is above other content */
+}
+
+/* Visible state of the sticky header */
+.sticky-header.visible {
+  top: 0; /* Show the header */
+}

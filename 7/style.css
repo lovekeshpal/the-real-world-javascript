@@ -1,0 +1,11 @@
+.code-snippet {
+  position: relative;
+  margin-top: 20px;
+}
+
+textarea#codeSnippet {
+  width: 100%;
+  max-width: 300px; /* Ensure the width does not exceed 300px */
+  height: auto;
+  resize: vertical;
+}
