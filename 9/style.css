@@ -1,0 +1,12 @@
+/* Styling for the color changer */
+.color-changer {
+  margin-top: 20px;
+}
+
+#colorBox {
+  width: 100%;
+  max-width: 300px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
