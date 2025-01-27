@@ -1,0 +1,31 @@
+body {
+  background-color: white;
+  color: black;
+}
+
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+body.dark-mode .btn-primary {
+  background-color: #375a7f;
+  border-color: #375a7f;
+}
+
+.card {
+  background-color: white;
+  color: black;
+  border: 1px solid #ddd;
+}
+
+body.dark-mode .card {
+  background-color: #333;
+  color: white;
+  border: 1px solid #444;
+}
