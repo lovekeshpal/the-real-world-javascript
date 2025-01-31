@@ -1,0 +1,17 @@
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.invalid-feedback {
+  display: none;
+  color: #dc3545;
+  font-size: 0.875rem;
+}
+
+.form-control.is-invalid {
+  border-color: #dc3545;
+}
+
+.form-control.is-invalid + .invalid-feedback {
+  display: block;
+}
