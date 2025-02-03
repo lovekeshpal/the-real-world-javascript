@@ -1,0 +1,15 @@
+.api-list {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-email {
+  color: #666;
+  font-size: 0.9em;
+}
