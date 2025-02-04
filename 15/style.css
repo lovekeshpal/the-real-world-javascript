@@ -1,0 +1,54 @@
+.api-list {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-email {
+  color: #666;
+  font-size: 0.9em;
+}
+
+/* Skeleton Loader */
+.skeleton-item {
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+}
+
+.skeleton-line {
+  height: 1rem;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 0.25rem;
+}
+
+.skeleton-line.name {
+  width: 60%;
+  margin-bottom: 0.5rem;
+}
+
+.skeleton-line.email {
+  width: 80%;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Hide skeleton loader when content loads */
+.loaded #skeletonLoader {
+  display: none;
+}
