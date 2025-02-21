@@ -17,7 +17,7 @@ Each video will guide you through building functional, real-world applications w
 2. Follow the videos and work through each project.
 3. Feel free to modify and extend the code as you learn.
 
-## Video Links:
+## Folder Wise Links:
 
 1. [1](./1)
 2. [2](./2)
