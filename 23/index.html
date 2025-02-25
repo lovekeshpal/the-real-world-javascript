@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apply Coupon Codes</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container mt-5">
+    <!-- Code starts from here -->
+    <div class="cart-summary">
+      <h3>Order Summary</h3>
+      <div class="summary-item">
+        <span>Subtotal:</span>
+        <span id="subtotal">$100.00</span>
+      </div>
+      <div class="summary-item">
+        <span>Shipping:</span>
+        <span id="shipping">$5.00</span>
+      </div>
+      <div class="coupon-section">
+        <div class="input-group mb-3">
+          <input type="text" id="couponCodeInput" class="form-control" placeholder="Enter coupon code">
+          <button id="applyCoupon" class="btn btn-outline-secondary">Apply</button>
+        </div>
+        <div id="couponMessage" class="coupon-message"></div>
+      </div>
+      <div class="summary-item discount-row" id="discountRow" style="display: none;">
+        <span>Discount:</span>
+        <span id="discount">-$0.00</span>
+      </div>
+      <div class="summary-item total-row">
+        <span><strong>Total:</strong></span>
+        <span id="total"><strong>$105.00</strong></span>
+      </div>
+      <button id="checkoutButton" class="btn btn-primary btn-block mt-3">Proceed to Checkout</button>
+    </div>
+    <!-- Code ends here -->
+  </div>
+
+  <div class="container social mt-5">
+    <a href="https://www.instagram.com/reel/DGgJTdaTP9R/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+      target="_blank" class="btn btn-outline-primary">
+      <i class="fab fa-instagram"></i> Watch Instagram Video
+    </a>
+    <a href="https://www.youtube.com/@SpecsyCoder" target="_blank" class="btn btn-outline-danger">
+      <i class="fab fa-youtube"></i> Visit YouTube Channel
+    </a>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>

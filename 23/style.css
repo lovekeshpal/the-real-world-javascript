@@ -1,0 +1,40 @@
+.cart-summary {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.total-row {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 10px;
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+
+.discount-row {
+  color: #28a745;
+}
+
+.coupon-section {
+  margin: 15px 0;
+}
+
+.coupon-message {
+  margin-top: 5px;
+  font-size: 0.85em;
+}
+
+.coupon-message.success {
+  color: #28a745;
+}
+
+.coupon-message.error {
+  color: #dc3545;
+}
