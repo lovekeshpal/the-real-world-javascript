@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auto Fill Addresses</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container mt-5">
+    <!-- Code starts from here -->
+    <div class="address-form-container">
+      <h2>Shipping Address</h2>
+    
+      <div class="form-group">
+        <label for="addressSearch">Search Address</label>
+        <div class="input-group mb-3">
+          <input type="text" id="addressSearch" class="form-control" placeholder="Type your address">
+          <div class="input-group-append">
+            <button id="searchBtn" class="btn btn-primary">Search</button>
+          </div>
+        </div>
+        <div id="addressSuggestions" class="address-suggestions"></div>
+      </div>
+    
+      <form id="addressForm">
+        <div class="form-group">
+          <label for="streetAddress">Street Address</label>
+          <input type="text" id="streetAddress" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" id="city" class="form-control">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="state">State</label>
+            <input type="text" id="state" class="form-control">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="zipCode">ZIP Code</label>
+            <input type="text" id="zipCode" class="form-control">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-success">Submit Address</button>
+      </form>
+    </div>
+    <!-- Code ends here -->
+  </div>
+
+  <div class="container social mt-5">
+    <a href="https://www.instagram.com/reel/DGnrpRJpE5R/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+      target="_blank" class="btn btn-outline-primary">
+      <i class="fab fa-instagram"></i> Watch Instagram Video
+    </a>
+    <a href="https://www.youtube.com/@SpecsyCoder" target="_blank" class="btn btn-outline-danger">
+      <i class="fab fa-youtube"></i> Visit YouTube Channel
+    </a>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
