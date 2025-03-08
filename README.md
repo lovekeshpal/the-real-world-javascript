@@ -45,6 +45,7 @@ Each video will guide you through building functional, real-world applications w
 24. [24](./24)
 25. [25](./25)
 26. [26](./26)
+27. [27](./27)
 
 By the end of this series, you'll have a portfolio of JavaScript projects and a deeper understanding of how JavaScript is used in real-world applications.
 
