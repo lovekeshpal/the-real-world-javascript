@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smooth Scrolling Between Sections</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+ <!-- Fixed Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">SmoothScroll</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="section-full bg-primary text-white">
+    <div class="container">
+      <div class="row align-items-center min-vh-100">
+        <div class="col-lg-8 mx-auto text-center">
+          <h1 class="display-4 mb-4">Smooth Scrolling Navigation</h1>
+          <p class="lead mb-5">Click on any navigation link to smoothly scroll to that section of the page.</p>
+          <a href="#about" class="btn btn-outline-light btn-lg scroll-btn">
+            Learn More <i class="fas fa-chevron-down ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section-padding bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-center mb-4">About Smooth Scrolling</h2>
+          <p class="lead text-center mb-5">Smooth scrolling enhances the user experience by animating the transition between different sections of a page.</p>
+          
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fas fa-magic text-primary mr-2"></i> Enhanced User Experience</h5>
+                  <p class="card-text">Smooth scrolling provides visual continuity, giving users a better sense of where they are on the page.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fas fa-tachometer-alt text-primary mr-2"></i> Better Navigation</h5>
+                  <p class="card-text">Users can easily navigate through content sections without jarring jumps or disorientation.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="text-center mt-4">
+            <a href="#services" class="btn btn-primary scroll-btn">
+              See Our Services <i class="fas fa-chevron-down ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="mb-4">Our Services</h2>
+          <p class="lead mb-5">We offer a variety of services to enhance your website's user experience.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="service-card text-center p-4">
+            <div class="icon-circle mb-4">
+              <i class="fas fa-code"></i>
+            </div>
+            <h5>Web Development</h5>
+            <p>Custom website development with modern technologies and best practices.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="service-card text-center p-4">
+            <div class="icon-circle mb-4">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h5>UI/UX Design</h5>
+            <p>Creating beautiful, intuitive user interfaces that delight your customers.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="service-card text-center p-4">
+            <div class="icon-circle mb-4">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h5>Responsive Design</h5>
+            <p>Ensuring your website looks great on all devices from phones to desktops.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-4">
+        <a href="#portfolio" class="btn btn-primary scroll-btn">
+          View Our Work <i class="fas fa-chevron-down ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="section-padding bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="mb-4">Our Portfolio</h2>
+          <p class="lead mb-5">Take a look at some of our recent projects.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="portfolio-item">
+            <img src="https://source.unsplash.com/random/600x400/?website" alt="Project 1" class="img-fluid rounded">
+            <div class="portfolio-overlay">
+              <h5>E-commerce Website</h5>
+              <p>Web Development</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="portfolio-item">
+            <img src="https://source.unsplash.com/random/600x400/?app" alt="Project 2" class="img-fluid rounded">
+            <div class="portfolio-overlay">
+              <h5>Mobile App</h5>
+              <p>UI/UX Design</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="portfolio-item">
+            <img src="https://source.unsplash.com/random/600x400/?design" alt="Project 3" class="img-fluid rounded">
+            <div class="portfolio-overlay">
+              <h5>Corporate Rebrand</h5>
+              <p>Branding</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-4">
+        <a href="#contact" class="btn btn-primary scroll-btn">
+          Contact Us <i class="fas fa-chevron-down ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="mb-4">Contact Us</h2>
+          <p class="lead mb-5">Have a question or want to work together? Drop us a line!</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" placeholder="Your Name">
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" placeholder="Your Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container social mt-5">
+    <a href="https://www.instagram.com/reel/DHBrSymzjpf/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+      target="_blank" class="btn btn-outline-primary">
+      <i class="fab fa-instagram"></i> Watch Instagram Video
+    </a>
+    <a href="https://www.youtube.com/@SpecsyCoder" target="_blank" class="btn btn-outline-danger">
+      <i class="fab fa-youtube"></i> Visit YouTube Channel
+    </a>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>

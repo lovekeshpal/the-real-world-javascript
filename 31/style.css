@@ -1,0 +1,57 @@
+/* Styling for the progress container */
+.progress-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: transparent;
+    z-index: 1030;
+    /* Above most elements */
+}
+
+/* Styling for the progress bar */
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #007bff, #00dbde);
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    transition: width 0.2s ease-out;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Style for section headers */
+section h2 {
+    color: #343a40;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f8f9fa;
+    padding-bottom: 10px;
+}
+
+/* Style for sections */
+section {
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+/* Add some extra padding to body to ensure content doesn't hide under the progress bar */
+body {
+    padding-top: 6px;
+}
+
+/* Make social links more prominent */
+.social {
+    margin-bottom: 50px;
+}
+
+.social a {
+    margin-right: 10px;
+    transition: transform 0.2s;
+}
+
+.social a:hover {
+    transform: translateY(-2px);
+}

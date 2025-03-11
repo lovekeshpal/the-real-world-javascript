@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scroll to Bottom Button</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container mt-5">
+    <!-- Code starts from here -->
+   <h2>Long Content Example</h2>
+    <p class="text-muted">Scroll down to read the content, then scroll up to see the bottom button appear.</p>
+    
+    <div class="scroll-container" id="contentContainer">
+      <h3>Stay Motivated!</h3>
+      
+      <p>Welcome to our website. We believe in the power of positivity and motivation...</p>
+      
+      <!-- Rest of the content as before -->
+      <h4>1. Believe in Yourself</h4>
+      <p>By accessing this website, you are taking the first step towards a more motivated and inspired life...</p>
+      
+      <!-- More content... -->
+      <h4>2. Set Goals</h4>
+      <p>Setting clear and achievable goals is crucial for maintaining motivation and tracking progress...</p>
+      
+      <h4>3. Stay Positive</h4>
+      <p>Maintaining a positive mindset can help you overcome challenges and stay focused on your objectives...</p>
+      
+      <h4>4. Take Action</h4>
+      <p>Consistent action towards your goals is essential for achieving success and staying motivated...</p>
+      
+      <h4>5. Reflect and Improve</h4>
+      <p>Regularly reflecting on your progress and making necessary adjustments can help you stay on track...</p>
+      
+      <!-- Button container - place at end of content -->
+      <div class="button-container">
+        <button id="scrollToBottomBtn" class="scroll-btn" title="Scroll to Bottom">
+          <i class="fas fa-arrow-down"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Code ends here -->
+  </div>
+
+  <div class="container social mt-5">
+    <a href="https://www.instagram.com/reel/DHBrSymzjpf/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+      target="_blank" class="btn btn-outline-primary">
+      <i class="fab fa-instagram"></i> Watch Instagram Video
+    </a>
+    <a href="https://www.youtube.com/@SpecsyCoder" target="_blank" class="btn btn-outline-danger">
+      <i class="fab fa-youtube"></i> Visit YouTube Channel
+    </a>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>

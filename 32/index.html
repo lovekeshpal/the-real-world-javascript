@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Section Navigation with Scroll Highlighting</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+   <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar Navigation -->
+      <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block sidebar">
+        <div class="sidebar-sticky">
+          <h5 class="sidebar-heading">Table of Contents</h5>
+          <ul class="nav flex-column" id="section-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#section1">
+                <i class="fas fa-flag"></i> Introduction
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section2">
+                <i class="fas fa-puzzle-piece"></i> Features
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section3">
+                <i class="fas fa-cogs"></i> How It Works
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section4">
+                <i class="fas fa-chart-line"></i> Benefits
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section5">
+                <i class="fas fa-code"></i> Implementation
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section6">
+                <i class="fas fa-check-circle"></i> Conclusion
+              </a>
+            </li>
+          </ul>
+          
+          <!-- Mobile navigation toggle -->
+          <div class="d-md-none mt-3">
+            <button class="btn btn-outline-secondary btn-sm w-100" id="toggle-nav">
+              <i class="fas fa-bars"></i> Toggle Navigation
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Main Content -->
+      <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4 content-area">
+        <div class="container mt-5">
+          <!-- Code starts from here -->
+          <header class="mb-5">
+            <h1>Section Navigation with Scroll Highlighting</h1>
+            <p class="lead">Scroll down to see different sections highlighted in the sidebar navigation as you scroll.</p>
+          </header>
+
+          <section id="section1" class="content-section mb-5">
+            <h2>Introduction</h2>
+            <p>Welcome to this demonstration of section navigation with scroll highlighting. This feature enhances user experience by providing visual feedback on the current section being viewed.</p>
+            <p>As you scroll through this page, notice how the navigation items in the sidebar automatically highlight to indicate your current position in the document.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+            <p>Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere.</p>
+          </section>
+
+          <section id="section2" class="content-section mb-5">
+            <h2>Features</h2>
+            <p>This section navigation with scroll highlighting includes several useful features:</p>
+            <ul>
+              <li>Automatic highlighting of the current section in the navigation menu</li>
+              <li>Smooth scrolling when clicking on navigation links</li>
+              <li>Responsive design that works on both desktop and mobile devices</li>
+              <li>Visual indicators that make it easy to understand your location in the document</li>
+            </ul>
+            <p>Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
+          </section>
+
+          <section id="section3" class="content-section mb-5">
+            <h2>How It Works</h2>
+            <p>The scroll highlighting functionality works by monitoring the scroll position of the page and determining which section is currently in the viewport.</p>
+            <p>Here's how it works behind the scenes:</p>
+            <ol>
+              <li>JavaScript tracks the scroll position using the Intersection Observer API</li>
+              <li>When a section enters the viewport, its corresponding navigation link is highlighted</li>
+              <li>CSS transitions ensure smooth visual changes between highlighted states</li>
+              <li>Click events on navigation links trigger smooth scrolling to the appropriate section</li>
+            </ol>
+            <p>Morbi orci magna, tincidunt vitae molestie nec, molestie at mi. Nulla nulla lorem, suscipit in posuere in, interdum non magna.</p>
+          </section>
+
+          <section id="section4" class="content-section mb-5">
+            <h2>Benefits</h2>
+            <p>Implementing section navigation with scroll highlighting offers several benefits for your website:</p>
+            <div class="row mt-4">
+              <div class="col-md-6 mb-3">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-map-marker-alt text-primary"></i> Improved Navigation</h5>
+                    <p class="card-text">Users can easily understand their current location within the content and navigate to other sections more efficiently.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-user-check text-success"></i> Enhanced User Experience</h5>
+                    <p class="card-text">Visual feedback creates a more engaging and interactive experience, reducing confusion and frustration.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-tachometer-alt text-info"></i> Increased Efficiency</h5>
+                    <p class="card-text">Users can quickly jump to specific sections without having to manually search through content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-mobile-alt text-warning"></i> Responsive Design</h5>
+                    <p class="card-text">Works seamlessly across different devices and screen sizes, providing consistent navigation options.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="section5" class="content-section mb-5">
+            <h2>Implementation</h2>
+            <p>Implementing section navigation with scroll highlighting involves three key components:</p>
+            <h4>HTML Structure</h4>
+            <p>Create a sidebar with navigation links that correspond to each section in your content. Each section should have a unique ID that matches its navigation link's href attribute.</p>
+            
+            <h4>CSS Styling</h4>
+            <p>Style the navigation to provide clear visual feedback when items are active or hovered. Use CSS transitions for smooth visual changes.</p>
+            
+            <h4>JavaScript Functionality</h4>
+            <p>Use JavaScript to track scroll position, determine which section is in view, and update the active state of navigation items accordingly.</p>
+            
+            <p>Pellentesque nec nam aliquam sem et tortor consequat id. At risus viverra adipiscing at in. Mattis molestie a iaculis at erat pellentesque adipiscing.</p>
+          </section>
+
+          <section id="section6" class="content-section mb-5">
+            <h2>Conclusion</h2>
+            <p>Section navigation with scroll highlighting is a powerful technique for improving the usability of long-form content on websites. By providing clear visual cues about the user's current position and easy access to other sections, you can create a more engaging and user-friendly experience.</p>
+            <p>This implementation demonstrates how to create a responsive, smooth-scrolling navigation system that enhances the reading experience on both desktop and mobile devices.</p>
+            <p>Feel free to customize the styling and functionality to match your specific needs and design preferences.</p>
+            <p>Thank you for exploring this feature demonstration!</p>
+          </section>
+          <!-- Code ends here -->
+        </div>
+
+        <div class="container social mt-5">
+          <a href="https://www.instagram.com/reel/DHBrSymzjpf/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+            target="_blank" class="btn btn-outline-primary">
+            <i class="fab fa-instagram"></i> Watch Instagram Video
+          </a>
+          <a href="https://www.youtube.com/@SpecsyCoder" target="_blank" class="btn btn-outline-danger">
+            <i class="fab fa-youtube"></i> Visit YouTube Channel
+          </a>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
