@@ -1,125 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll Progress Indicator</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Scroll Progress Indicator</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Font Awesome CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <!-- Progress bar container -->
+  <body>
+    <!-- Progress bar container -->
     <div class="progress-container">
-    <div class="progress-bar" id="scrollProgressBar"></div>
-  </div>
-  <div class="container mt-5">
-    <!-- Code starts from here -->
-    <header class="mb-5">
-      <h1>Scroll Progress Indicator</h1>
-      <p class="lead">Scroll down to see the progress bar at the top of the page fill from left to right.</p>
-    </header>
+      <div class="progress-bar" id="scrollProgressBar"></div>
+    </div>
+    <div class="container mt-5">
+      <!-- Code starts from here -->
+      <header class="mb-5">
+        <h1>Scroll Progress Indicator</h1>
+        <p class="lead">
+          Scroll down to see the progress bar at the top of the page fill from
+          left to right.
+        </p>
+      </header>
 
-    <section class="mb-5">
-      <h2>How It Works</h2>
-      <p>As you scroll down the page, the progress bar at the top will fill proportionally to how far you've scrolled through the content. This gives you a visual indication of your position in the document and how much content remains.</p>
-      
-      <div class="alert alert-info">
-        <i class="fas fa-info-circle"></i> The progress bar is fixed to the top of the viewport and stays visible as you scroll.
-      </div>
-    </section>
+      <section class="mb-5">
+        <h2>How It Works</h2>
+        <p>
+          As you scroll down the page, the progress bar at the top will fill
+          proportionally to how far you've scrolled through the content. This
+          gives you a visual indication of your position in the document and how
+          much content remains.
+        </p>
 
-    <section class="mb-5">
-      <h2>Section 1: Introduction</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.</p>
-      <p>Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet.</p>
-    </section>
+        <div class="alert alert-info">
+          <i class="fas fa-info-circle"></i> The progress bar is fixed to the
+          top of the viewport and stays visible as you scroll.
+        </div>
+      </section>
 
-    <section class="mb-5">
-      <h2>Section 2: Benefits</h2>
-      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet.</p>
-      <p>Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper.</p>
-      
-      <div class="row mt-4">
-        <div class="col-md-4 mb-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Improved Navigation</h5>
-              <p class="card-text">Users always know where they are in the content and how much remains.</p>
+      <section class="mb-5">
+        <h2>Section 1: Introduction</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui
+          mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor
+          neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim.
+          Phasellus molestie magna non est bibendum non venenatis nisl tempor.
+        </p>
+        <p>
+          Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor
+          posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor
+          orci. Etiam at risus et justo dignissim congue. Donec congue lacinia
+          dui, a porttitor lectus condimentum laoreet.
+        </p>
+      </section>
+
+      <section class="mb-5">
+        <h2>Section 2: Benefits</h2>
+        <p>
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+          posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit
+          dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi
+          in ipsum sit amet pede facilisis laoreet.
+        </p>
+        <p>
+          Donec lacus nunc, viverra nec, blandit vel, egestas et, augue.
+          Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim.
+          Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper.
+        </p>
+
+        <div class="row mt-4">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Improved Navigation</h5>
+                <p class="card-text">
+                  Users always know where they are in the content and how much
+                  remains.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Visual Feedback</h5>
+                <p class="card-text">
+                  Provides satisfying visual feedback as users progress through
+                  content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Engagement</h5>
+                <p class="card-text">
+                  Encourages users to scroll through the entire content to
+                  complete the bar.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Visual Feedback</h5>
-              <p class="card-text">Provides satisfying visual feedback as users progress through content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Engagement</h5>
-              <p class="card-text">Encourages users to scroll through the entire content to complete the bar.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="mb-5">
-      <h2>Section 3: Implementation</h2>
-      <p>The scroll progress indicator is implemented using HTML, CSS, and JavaScript. It calculates how far the user has scrolled through the page and updates the width of a progress bar accordingly.</p>
-      <p>Key components include:</p>
-      <ul>
-        <li>A fixed container at the top of the viewport</li>
-        <li>A progress bar element that grows as the user scrolls</li>
-        <li>JavaScript to calculate scroll percentage</li>
-        <li>CSS transitions for smooth animation</li>
-      </ul>
-    </section>
+      <section class="mb-5">
+        <h2>Section 3: Implementation</h2>
+        <p>
+          The scroll progress indicator is implemented using HTML, CSS, and
+          JavaScript. It calculates how far the user has scrolled through the
+          page and updates the width of a progress bar accordingly.
+        </p>
+        <p>Key components include:</p>
+        <ul>
+          <li>A fixed container at the top of the viewport</li>
+          <li>A progress bar element that grows as the user scrolls</li>
+          <li>JavaScript to calculate scroll percentage</li>
+          <li>CSS transitions for smooth animation</li>
+        </ul>
+      </section>
 
-    <section class="mb-5">
-      <h2>Section 4: Customization</h2>
-      <p>The scroll progress indicator can be customized in various ways:</p>
-      <ul>
-        <li>Change the color to match your website's theme</li>
-        <li>Adjust the height for more or less prominence</li>
-        <li>Position it at the bottom or side of the page instead of the top</li>
-        <li>Add additional effects like gradient colors or animations</li>
-      </ul>
-    </section>
+      <section class="mb-5">
+        <h2>Section 4: Customization</h2>
+        <p>The scroll progress indicator can be customized in various ways:</p>
+        <ul>
+          <li>Change the color to match your website's theme</li>
+          <li>Adjust the height for more or less prominence</li>
+          <li>
+            Position it at the bottom or side of the page instead of the top
+          </li>
+          <li>Add additional effects like gradient colors or animations</li>
+        </ul>
+      </section>
 
-    <section class="mb-5">
-      <h2>Section 5: Conclusion</h2>
-      <p>Adding a scroll progress indicator to your website is a simple way to improve user experience, especially on long pages. It provides visual feedback that helps users understand their position in the content.</p>
-      <p>This example demonstrates a basic implementation that you can build upon and customize for your specific needs.</p>
-      <p>Once you reach the bottom of the page, the progress bar will be completely filled.</p>
-    </section>
-    <!-- Code ends here -->
-  </div>
+      <section class="mb-5">
+        <h2>Section 5: Conclusion</h2>
+        <p>
+          Adding a scroll progress indicator to your website is a simple way to
+          improve user experience, especially on long pages. It provides visual
+          feedback that helps users understand their position in the content.
+        </p>
+        <p>
+          This example demonstrates a basic implementation that you can build
+          upon and customize for your specific needs.
+        </p>
+        <p>
+          Once you reach the bottom of the page, the progress bar will be
+          completely filled.
+        </p>
+      </section>
+      <!-- Code ends here -->
+    </div>
 
-  <div class="container social mt-5">
-    <a href="https://www.instagram.com/reel/DHBrSymzjpf/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-      target="_blank" class="btn btn-outline-primary">
-      <i class="fab fa-instagram"></i> Watch Instagram Video
-    </a>
-    <a href="https://www.youtube.com/@SpecsyCoder" target="_blank" class="btn btn-outline-danger">
-      <i class="fab fa-youtube"></i> Visit YouTube Channel
-    </a>
-  </div>
+    <div class="container social mt-5">
+      <a
+        href="https://www.instagram.com/reel/DHYvl_xJv06/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        target="_blank"
+        class="btn btn-outline-primary"
+      >
+        <i class="fab fa-instagram"></i> Watch Instagram Video
+      </a>
+      <a
+        href="https://www.youtube.com/@SpecsyCoder"
+        target="_blank"
+        class="btn btn-outline-danger"
+      >
+        <i class="fab fa-youtube"></i> Visit YouTube Channel
+      </a>
+    </div>
 
-  <!-- Bootstrap JS and dependencies -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="./main.js"></script>
-</body>
-
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
 </html>
