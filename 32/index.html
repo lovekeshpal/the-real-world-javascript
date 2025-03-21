@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code generator</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <!-- Code starts from here -->
+      <div class="qr-generator-container">
+        <h2 class="text-center mb-4">QR Code Generator</h2>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Generate QR Code</h5>
+
+                <form id="qrForm">
+                  <div class="form-group">
+                    <label for="qrText">Text or URL</label>
+                    <textarea
+                      id="qrText"
+                      class="form-control"
+                      rows="4"
+                      placeholder="Enter text or URL to convert to QR code"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="qrSize">QR Code Size</label>
+                    <select id="qrSize" class="form-control">
+                      <option value="100">Small (100x100)</option>
+                      <option value="200" selected>Medium (200x200)</option>
+                      <option value="300">Large (300x300)</option>
+                      <option value="400">Extra Large (400x400)</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label>QR Code Colors</label>
+                    <div class="d-flex">
+                      <div class="mr-3">
+                        <label for="qrDarkColor" class="color-label"
+                          >Dark Color</label
+                        >
+                        <input
+                          type="color"
+                          id="qrDarkColor"
+                          class="form-control"
+                          value="#000000"
+                        />
+                      </div>
+                      <div>
+                        <label for="qrLightColor" class="color-label"
+                          >Light Color</label
+                        >
+                        <input
+                          type="color"
+                          id="qrLightColor"
+                          class="form-control"
+                          value="#ffffff"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary btn-block">
+                    <i class="fas fa-qrcode mr-2"></i>Generate QR Code
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">Your QR Code</h5>
+                <div id="qrCodeContainer" class="qr-code-container">
+                  <div id="qrcode"></div>
+                  <p id="emptyMessage" class="text-muted mt-4">
+                    Fill the form and click "Generate QR Code" to create your QR
+                    code
+                  </p>
+                </div>
+                <div id="downloadContainer" style="display: none" class="mt-3">
+                  <button id="downloadBtn" class="btn btn-success">
+                    <i class="fas fa-download mr-2"></i>Download QR Code
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Code ends here -->
+    </div>
+
+    <div class="container social mt-5">
+      <a
+        href="https://www.instagram.com/reel/DG03JXMTWZg/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        target="_blank"
+        class="btn btn-outline-primary"
+      >
+        <i class="fab fa-instagram"></i> Watch Instagram Video
+      </a>
+      <a
+        href="https://www.youtube.com/@SpecsyCoder"
+        target="_blank"
+        class="btn btn-outline-danger"
+      >
+        <i class="fab fa-youtube"></i> Visit YouTube Channel
+      </a>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- QRCode.js Library -->
+    <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
