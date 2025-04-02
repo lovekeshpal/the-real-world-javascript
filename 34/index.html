@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Tracker</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <!-- Code starts from here -->
+      <div class="task-tracker">
+        <h2>Task Tracker</h2>
+
+        <form id="taskForm" class="mb-4">
+          <div class="input-group">
+            <input
+              type="text"
+              id="taskInput"
+              class="form-control"
+              placeholder="What needs to be done?"
+              required
+            />
+            <select id="prioritySelect" class="form-control">
+              <option value="low">Low Priority</option>
+              <option value="medium" selected>Medium Priority</option>
+              <option value="high">High Priority</option>
+            </select>
+            <div class="input-group-append">
+              <button type="submit" class="btn btn-primary">
+                <i class="fas fa-plus"></i> Add Task
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <div class="task-filters mb-3">
+          <div class="btn-group">
+            <button class="btn btn-outline-secondary active" data-filter="all">
+              All
+            </button>
+            <button class="btn btn-outline-secondary" data-filter="active">
+              Active
+            </button>
+            <button class="btn btn-outline-secondary" data-filter="completed">
+              Completed
+            </button>
+          </div>
+        </div>
+
+        <div class="task-stats mb-3">
+          <span id="taskCount" class="badge badge-info">0 tasks remaining</span>
+        </div>
+
+        <ul id="taskList" class="list-group">
+          <!-- Tasks will be added here via JavaScript -->
+        </ul>
+      </div>
+      <!-- Code ends here -->
+    </div>
+
+    <div class="container social mt-5">
+      <a
+        href="https://www.instagram.com/reel/DG03JXMTWZg/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        target="_blank"
+        class="btn btn-outline-primary"
+      >
+        <i class="fab fa-instagram"></i> Watch Instagram Video
+      </a>
+      <a
+        href="https://www.youtube.com/@SpecsyCoder"
+        target="_blank"
+        class="btn btn-outline-danger"
+      >
+        <i class="fab fa-youtube"></i> Visit YouTube Channel
+      </a>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
