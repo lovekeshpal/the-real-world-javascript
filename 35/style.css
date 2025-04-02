@@ -1,0 +1,76 @@
+.password-meter-container {
+  max-width: 600px;
+}
+
+.card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 8px;
+}
+
+.card-header {
+  border-radius: 8px 8px 0 0 !important;
+}
+
+.password-requirements {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.requirements-list {
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+.requirement {
+  margin-bottom: 8px;
+}
+
+.requirement i {
+  margin-right: 8px;
+}
+
+.requirement.met i {
+  color: #28a745 !important;
+}
+
+.progress {
+  height: 8px;
+  background-color: #e9ecef;
+}
+
+/* Strength meter colors */
+.strength-very-weak {
+  background-color: #dc3545;
+  width: 20% !important;
+}
+
+.strength-weak {
+  background-color: #ffc107;
+  width: 40% !important;
+}
+
+.strength-medium {
+  background-color: #fd7e14;
+  width: 60% !important;
+}
+
+.strength-strong {
+  background-color: #20c997;
+  width: 80% !important;
+}
+
+.strength-very-strong {
+  background-color: #28a745;
+  width: 100% !important;
+}
+
+/* Password toggle button */
+.toggle-password {
+  cursor: pointer;
+}
+
+.toggle-password:focus {
+  box-shadow: none;
+}
