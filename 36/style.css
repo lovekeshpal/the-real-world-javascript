@@ -1,0 +1,130 @@
+.credit-card-form {
+  max-width: 1000px;
+  margin: 0;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-header {
+  border-radius: 0 !important;
+  padding: 15px 20px;
+}
+
+.credit-card-wrapper {
+  perspective: 1000px;
+  height: 220px;
+}
+
+.credit-card-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.credit-card-front {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #0a0a0a, #3a4452);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  color: white;
+  position: relative;
+}
+
+.card-type {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 30px;
+}
+
+.card-number {
+  font-size: 24px;
+  margin-top: 55px;
+  letter-spacing: 2px;
+  font-family: 'Courier New', monospace;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+.card-holder,
+.card-expires {
+  font-size: 14px;
+}
+
+.card-holder .label,
+.card-expires .label {
+  font-size: 11px;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: 5px;
+}
+
+/* Card type icons */
+.visa {
+  color: #0157a2;
+}
+
+.mastercard {
+  color: #eb001b;
+}
+
+.amex {
+  color: #007bc1;
+}
+
+.discover {
+  color: #ff6600;
+}
+
+/* Form styling */
+.form-group label {
+  font-weight: 500;
+}
+
+.input-group-text {
+  background-color: #f8f9fa;
+}
+
+.form-control.is-valid,
+.was-validated .form-control:valid {
+  border-color: #28a745;
+  padding-right: calc(1.5em + 0.75rem);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+  border-color: #dc3545;
+  padding-right: calc(1.5em + 0.75rem);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23dc3545' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+@media (max-width: 576px) {
+  .credit-card-front {
+    padding: 15px;
+  }
+
+  .card-number {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
+  .card-details {
+    margin-top: 25px;
+  }
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Credit Card Form Validator</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <!-- Code starts from here -->
+      <div class="credit-card-form">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="card shadow">
+              <div class="card-header bg-dark text-white">
+                <h4 class="mb-0">Payment Details</h4>
+              </div>
+              <div class="card-body">
+                <!-- Credit card preview -->
+                <div class="credit-card-wrapper mb-4">
+                  <div class="credit-card-inner">
+                    <div class="credit-card-front">
+                      <div class="card-type" id="cardTypeDisplay">
+                        <i class="far fa-credit-card"></i>
+                      </div>
+                      <div class="card-number" id="cardNumberDisplay">
+                        •••• •••• •••• ••••
+                      </div>
+                      <div class="card-details">
+                        <div class="card-holder">
+                          <div class="label">Card Holder</div>
+                          <div class="value" id="cardHolderDisplay">
+                            Your Name
+                          </div>
+                        </div>
+                        <div class="card-expires">
+                          <div class="label">Expires</div>
+                          <div class="value" id="cardExpiryDisplay">MM/YY</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Form -->
+                <form id="creditCardForm">
+                  <div class="form-group">
+                    <label for="cardNumber">Card Number</label>
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="cardNumber"
+                        placeholder="1234 5678 9012 3456"
+                        maxlength="19"
+                        autocomplete="cc-number"
+                      />
+                      <div class="input-group-append">
+                        <span class="input-group-text" id="cardTypeIcon">
+                          <i class="far fa-credit-card"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <small id="cardNumberError" class="text-danger"></small>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="cardHolder">Card Holder Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cardHolder"
+                      placeholder="Name on card"
+                      autocomplete="cc-name"
+                    />
+                    <small id="cardHolderError" class="text-danger"></small>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="expiryDate">Expiry Date</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="expiryDate"
+                          placeholder="MM/YY"
+                          maxlength="5"
+                          autocomplete="cc-exp"
+                        />
+                        <small id="expiryDateError" class="text-danger"></small>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="cvv"
+                          placeholder="123"
+                          maxlength="4"
+                          autocomplete="cc-csc"
+                        />
+                        <small id="cvvError" class="text-danger"></small>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary btn-block mt-4">
+                    <i class="fas fa-lock mr-2"></i>Pay Securely
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Code ends here -->
+    </div>
+
+    <div class="container social mt-5">
+      <a
+        href="https://www.instagram.com/reel/DIEf7kvzJuX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        target="_blank"
+        class="btn btn-outline-primary"
+      >
+        <i class="fab fa-instagram"></i> Watch Instagram Video
+      </a>
+      <a
+        href="https://www.youtube.com/@SpecsyCoder"
+        target="_blank"
+        class="btn btn-outline-danger"
+      >
+        <i class="fab fa-youtube"></i> Visit YouTube Channel
+      </a>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

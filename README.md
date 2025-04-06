@@ -54,6 +54,7 @@ Each video will guide you through building functional, real-world applications w
 33. [33](./33)
 34. [34](./34)
 35. [35](./35)
+36. [36](./36)
 
 By the end of this series, you'll have a portfolio of JavaScript projects and a deeper understanding of how JavaScript is used in real-world applications.
 
