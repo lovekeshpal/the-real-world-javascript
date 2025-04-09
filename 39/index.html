@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toast Notifications</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <!-- Code starts from here -->
+      <div class="row mb-5">
+        <div class="col-md-8 mx-auto text-center">
+          <h2>Toast Notification System</h2>
+          <p class="lead mb-4">
+            Click the buttons below to show different types of toast
+            notifications
+          </p>
+
+          <div class="btn-group-vertical w-100">
+            <button class="btn btn-success mb-2" id="success-toast">
+              <i class="fas fa-check-circle mr-2"></i> Success Toast
+            </button>
+            <button class="btn btn-danger mb-2" id="error-toast">
+              <i class="fas fa-times-circle mr-2"></i> Error Toast
+            </button>
+            <button class="btn btn-warning mb-2" id="warning-toast">
+              <i class="fas fa-exclamation-triangle mr-2"></i> Warning Toast
+            </button>
+            <button class="btn btn-info" id="info-toast">
+              <i class="fas fa-info-circle mr-2"></i> Info Toast
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Code ends here -->
+      <!-- Toast container - notifications will appear here -->
+      <div id="toast-container"></div>
+    </div>
+
+    <div class="container social mt-5">
+      <a
+        href="https://www.instagram.com/reel/DIJu3s9zYJl/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        target="_blank"
+        class="btn btn-outline-primary"
+      >
+        <i class="fab fa-instagram"></i> Watch Instagram Video
+      </a>
+      <a
+        href="https://www.youtube.com/@SpecsyCoder"
+        target="_blank"
+        class="btn btn-outline-danger"
+      >
+        <i class="fab fa-youtube"></i> Visit YouTube Channel
+      </a>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
