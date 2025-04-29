@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const modalTrailer = document.getElementById('modalTrailer');
   
   // TMDB API Configuration
-  const API_KEY = '9d2ac0e411cefe72dbf19a4500943adb'; // Replace with your TMDB API key
+  const API_KEY = '9d2ac0e411cefe72dbf19a4500943adb'; 
   const IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/';
   const POSTER_SIZE = 'w500';
   
