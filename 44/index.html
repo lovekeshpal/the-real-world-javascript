@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One-click Wishlist Toggle</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <!-- Code starts from here -->
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Featured Products</h2>
+        <div class="wishlist-counter">
+          <button id="viewWishlist" class="btn btn-outline-danger">
+            <i class="fas fa-heart mr-2"></i>Wishlist
+            <span id="wishlistCount" class="badge badge-danger ml-1">0</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="row" id="productsContainer">
+        <!-- Product 1 -->
+        <div class="col-md-4 col-sm-6 mb-4">
+          <div class="product-card" data-product-id="1">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+                alt="Smart Watch"
+              />
+              <button class="wishlist-btn" data-product-id="1">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-info">
+              <h5>Smart Watch Pro</h5>
+              <div class="d-flex justify-content-between">
+                <span class="product-price">$299.99</span>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+              <button class="btn btn-primary btn-sm mt-2 w-100">
+                <i class="fas fa-shopping-cart mr-1"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-md-4 col-sm-6 mb-4">
+          <div class="product-card" data-product-id="2">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+                alt="Headphones"
+              />
+              <button class="wishlist-btn" data-product-id="2">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-info">
+              <h5>Wireless Headphones</h5>
+              <div class="d-flex justify-content-between">
+                <span class="product-price">$149.99</span>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <button class="btn btn-primary btn-sm mt-2 w-100">
+                <i class="fas fa-shopping-cart mr-1"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-md-4 col-sm-6 mb-4">
+          <div class="product-card" data-product-id="3">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1546868871-7041f2a55e12"
+                alt="Smart Speaker"
+              />
+              <button class="wishlist-btn" data-product-id="3">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-info">
+              <h5>Smart Speaker</h5>
+              <div class="d-flex justify-content-between">
+                <span class="product-price">$99.99</span>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+              <button class="btn btn-primary btn-sm mt-2 w-100">
+                <i class="fas fa-shopping-cart mr-1"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-md-4 col-sm-6 mb-4">
+          <div class="product-card" data-product-id="4">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1507646227500-4d389b0012be"
+                alt="Smartphone"
+              />
+              <button class="wishlist-btn" data-product-id="4">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-info">
+              <h5>Pro Smartphone 13</h5>
+              <div class="d-flex justify-content-between">
+                <span class="product-price">$899.99</span>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <button class="btn btn-primary btn-sm mt-2 w-100">
+                <i class="fas fa-shopping-cart mr-1"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="col-md-4 col-sm-6 mb-4">
+          <div class="product-card" data-product-id="5">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1629429407759-01cd3d7cfb38"
+                alt="Wireless Earbuds"
+              />
+              <button class="wishlist-btn" data-product-id="5">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-info">
+              <h5>Wireless Earbuds</h5>
+              <div class="d-flex justify-content-between">
+                <span class="product-price">$129.99</span>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+              <button class="btn btn-primary btn-sm mt-2 w-100">
+                <i class="fas fa-shopping-cart mr-1"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="col-md-4 col-sm-6 mb-4">
+          <div class="product-card" data-product-id="6">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45"
+                alt="Laptop"
+              />
+              <button class="wishlist-btn" data-product-id="6">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-info">
+              <h5>Ultrabook Pro 15"</h5>
+              <div class="d-flex justify-content-between">
+                <span class="product-price">$1,299.99</span>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <button class="btn btn-primary btn-sm mt-2 w-100">
+                <i class="fas fa-shopping-cart mr-1"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wishlist Drawer -->
+      <div id="wishlistDrawer" class="wishlist-drawer">
+        <div class="wishlist-header">
+          <h4><i class="fas fa-heart text-danger mr-2"></i> My Wishlist</h4>
+          <button id="closeWishlist" class="close-btn">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div id="wishlistItems" class="wishlist-items">
+          <!-- Wishlist items will be added here -->
+          <div class="empty-wishlist text-center">
+            <div class="empty-wishlist-icon">
+              <i class="far fa-heart"></i>
+            </div>
+            <p>Your wishlist is empty</p>
+            <p class="text-muted small">
+              Click the heart icon on products to add them to your wishlist
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Notification Popup -->
+      <div id="notificationPopup" class="notification-popup">
+        <div id="notificationContent" class="notification-content"></div>
+      </div>
+      <!-- Code ends here -->
+    </div>
+    <div class="container social mt-5">
+      <a
+        href="https://www.instagram.com/reel/DI6rqrpT2ic/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        target="_blank"
+        class="btn btn-outline-primary"
+      >
+        <i class="fab fa-instagram"></i> Watch Instagram Video
+      </a>
+      <a
+        href="https://www.youtube.com/@SpecsyCoder"
+        target="_blank"
+        class="btn btn-outline-danger"
+      >
+        <i class="fab fa-youtube"></i> Visit YouTube Channel
+      </a>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
