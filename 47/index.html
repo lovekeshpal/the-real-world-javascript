@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hashtag Highlighter</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <!-- Code starts from here -->
+      <div class="row">
+        <div class="col-md-8">
+          <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+              <h4 class="mb-0">
+                <i class="fas fa-hashtag mr-2"></i>Hashtag Highlighter
+              </h4>
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <label for="textInput"
+                  >Type your text (hashtags will highlight
+                  automatically):</label
+                >
+                <textarea
+                  id="textInput"
+                  class="form-control"
+                  rows="4"
+                  placeholder="Start typing... use #hashtags like #javascript or #coding"
+                ></textarea>
+              </div>
+
+              <div class="hashtag-display-container mt-4">
+                <h5>Preview:</h5>
+                <div id="displayArea" class="hashtag-display p-3">
+                  Your highlighted text will appear here...
+                </div>
+              </div>
+
+              <div class="mt-4">
+                <h5>Hashtag Colors:</h5>
+                <div class="btn-group">
+                  <button
+                    class="btn btn-sm color-option active"
+                    data-color="primary"
+                  >
+                    Blue
+                  </button>
+                  <button class="btn btn-sm color-option" data-color="success">
+                    Green
+                  </button>
+                  <button class="btn btn-sm color-option" data-color="danger">
+                    Red
+                  </button>
+                  <button class="btn btn-sm color-option" data-color="warning">
+                    Yellow
+                  </button>
+                  <button class="btn btn-sm color-option" data-color="info">
+                    Teal
+                  </button>
+                  <button class="btn btn-sm color-option" data-color="dark">
+                    Black
+                  </button>
+                </div>
+              </div>
+
+              <div class="hashtag-stats mt-4">
+                <h5>Hashtag Stats:</h5>
+                <div id="hashtagList" class="hashtag-list">
+                  <p class="text-muted">No hashtags detected yet.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Code ends here -->
+    </div>
+    <div class="container social mt-5">
+      <a
+        href="https://www.instagram.com/reel/DJZhAaopNyd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        target="_blank"
+        class="btn btn-outline-primary"
+      >
+        <i class="fab fa-instagram"></i> Watch Instagram Video
+      </a>
+      <a
+        href="https://www.youtube.com/@SpecsyCoder"
+        target="_blank"
+        class="btn btn-outline-danger"
+      >
+        <i class="fab fa-youtube"></i> Visit YouTube Channel
+      </a>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
