@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Mention Auto Complete</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <!-- Code starts from here -->
+      <div class="card shadow">
+        <div class="card-header bg-primary text-white">
+          <h4 class="mb-0">
+            <i class="fas fa-at mr-2"></i>User Mention System
+          </h4>
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <label for="commentBox"
+              >Write a comment (type @ to mention a user):</label
+            >
+            <div class="comment-container">
+              <textarea
+                id="commentBox"
+                class="form-control"
+                rows="3"
+                placeholder="Type your comment here... (try typing @)"
+              ></textarea>
+
+              <!-- Autocomplete dropdown -->
+              <div id="mentionDropdown" class="mention-dropdown">
+                <div class="dropdown-header">
+                  <i class="fas fa-users mr-1"></i> Suggested Users
+                </div>
+                <div id="mentionList" class="mention-list">
+                  <!-- User suggestions will be inserted here -->
+                </div>
+              </div>
+            </div>
+            <small class="text-muted"
+              >Tip: Use up/down arrow keys to navigate suggestions</small
+            >
+          </div>
+
+          <button id="postBtn" class="btn btn-primary">
+            <i class="fas fa-paper-plane mr-2"></i>Post Comment
+          </button>
+
+          <hr />
+
+          <div class="comments-section">
+            <h5>Previous Comments:</h5>
+            <div id="commentsContainer">
+              <p class="text-muted font-italic">
+                No comments yet. Be the first to post!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mt-4">
+        <div class="card-header bg-light">
+          <h5 class="mb-0">Available Users</h5>
+        </div>
+        <div class="card-body">
+          <div class="row" id="availableUsers">
+            <!-- User cards will be generated here -->
+          </div>
+        </div>
+      </div>
+      <!-- Code ends here -->
+    </div>
+    <div class="container social mt-5">
+      <a
+        href="https://www.instagram.com/reel/DJZhAaopNyd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        target="_blank"
+        class="btn btn-outline-primary"
+      >
+        <i class="fab fa-instagram"></i> Watch Instagram Video
+      </a>
+      <a
+        href="https://www.youtube.com/@SpecsyCoder"
+        target="_blank"
+        class="btn btn-outline-danger"
+      >
+        <i class="fab fa-youtube"></i> Visit YouTube Channel
+      </a>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
