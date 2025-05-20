@@ -65,6 +65,10 @@ Each video will guide you through building functional, real-world applications w
 44. [44](./44)
 45. [45](./45)
 46. [46](./46)
+47. [47](./47)
+48. [48](./48)
+49. [49](./49)
+50. [50](./50)
 
 By the end of this series, you'll have a portfolio of JavaScript projects and a deeper understanding of how JavaScript is used in real-world applications.
 
