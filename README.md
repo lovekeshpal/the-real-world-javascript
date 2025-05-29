@@ -19,9 +19,9 @@ Each video will guide you through building functional, real-world applications w
 
 ## Folder Wise Links:
 
-1. [1](./1)
-2. [2](./2)
-3. [3](./3)
+1. [Login Form](./1)
+2. [Character Counter](./2)
+3. [Highlight Matching Items](./3)
 4. [4](./4)
 5. [5](./5)
 6. [6](./6)
