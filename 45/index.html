@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collapsible Accordion Panels</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <!-- Code starts from here -->
+      <div class="accordion-container">
+        <h2 class="text-center mb-4">FAQ Accordion</h2>
+
+        <!-- Accordion Item 1 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3>What is JavaScript?</h3>
+            <span class="accordion-icon">
+              <i class="fas fa-chevron-down"></i>
+            </span>
+          </div>
+          <div class="accordion-content">
+            <p>
+              JavaScript is a programming language used to create interactive
+              effects within web browsers. It's a core technology of the World
+              Wide Web and is essential for web applications.
+            </p>
+            <p>
+              JavaScript can update and change both HTML and CSS, and can
+              calculate, manipulate and validate data.
+            </p>
+          </div>
+        </div>
+
+        <!-- Accordion Item 2 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3>How does this accordion work?</h3>
+            <span class="accordion-icon">
+              <i class="fas fa-chevron-down"></i>
+            </span>
+          </div>
+          <div class="accordion-content">
+            <p>
+              This accordion uses JavaScript to toggle the visibility of content
+              panels when clicking on the headers.
+            </p>
+            <p>
+              When a header is clicked, the associated content panel expands
+              while all others collapse, creating the accordion effect.
+            </p>
+            <ul>
+              <li>Clean CSS transitions for smooth animations</li>
+              <li>Accessible design with proper ARIA attributes</li>
+              <li>Responsive layout that works on all devices</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Accordion Item 3 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3>Can I customize this component?</h3>
+            <span class="accordion-icon">
+              <i class="fas fa-chevron-down"></i>
+            </span>
+          </div>
+          <div class="accordion-content">
+            <p>Yes! This accordion component is fully customizable:</p>
+            <ol>
+              <li>Modify the CSS to change colors, spacing, and animations</li>
+              <li>
+                Edit the HTML to add more accordion items or change content
+              </li>
+              <li>
+                Adjust the JavaScript to change behavior (like allowing multiple
+                open panels)
+              </li>
+            </ol>
+            <p>The code is well-commented and easy to understand.</p>
+          </div>
+        </div>
+
+        <!-- Accordion Item 4 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3>Is this accessible to all users?</h3>
+            <span class="accordion-icon">
+              <i class="fas fa-chevron-down"></i>
+            </span>
+          </div>
+          <div class="accordion-content">
+            <p>This accordion is built with accessibility in mind:</p>
+            <p>
+              It works with keyboard navigation, screen readers, and includes
+              proper focus states. The design maintains good color contrast and
+              follows best practices for interactive components.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Code ends here -->
+    </div>
+    <div class="container social mt-5">
+      <a
+        href="https://www.instagram.com/reel/DI6rqrpT2ic/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        target="_blank"
+        class="btn btn-outline-primary"
+      >
+        <i class="fab fa-instagram"></i> Watch Instagram Video
+      </a>
+      <a
+        href="https://www.youtube.com/@SpecsyCoder"
+        target="_blank"
+        class="btn btn-outline-danger"
+      >
+        <i class="fab fa-youtube"></i> Visit YouTube Channel
+      </a>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

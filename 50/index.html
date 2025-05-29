@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Username Hover Cards</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <!-- Code starts from here -->
+      <div class="card shadow-sm mb-5">
+        <div class="card-header bg-primary text-white">
+          <h4 class="mb-0">
+            <i class="fas fa-users mr-2"></i>Profile Card Hover
+          </h4>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title mb-4">Recent Forum Activity</h5>
+
+          <!-- Discussion threads -->
+          <div class="discussion-list">
+            <div class="discussion-item">
+              <div class="discussion-header">
+                <img
+                  src="https://randomuser.me/api/portraits/men/32.jpg"
+                  alt="User Avatar"
+                  class="avatar-small"
+                />
+                <span class="username" data-username="michael_scott"
+                  >Michael Scott</span
+                >
+                <span class="timestamp text-muted">Posted 2 hours ago</span>
+              </div>
+              <p class="discussion-content">
+                The new update looks great!
+                <span class="username" data-username="jim_halpert"
+                  >@Jim Halpert</span
+                >
+                suggested we add dark mode, which I think would make it even
+                better.
+              </p>
+              <div class="discussion-footer">
+                <span class="action-link"
+                  ><i class="far fa-thumbs-up mr-1"></i>Like</span
+                >
+                <span class="action-link"
+                  ><i class="far fa-comment mr-1"></i>Reply</span
+                >
+              </div>
+            </div>
+
+            <div class="discussion-item">
+              <div class="discussion-header">
+                <img
+                  src="https://randomuser.me/api/portraits/women/32.jpg"
+                  alt="User Avatar"
+                  class="avatar-small"
+                />
+                <span class="username" data-username="pam_beesly"
+                  >Pam Beesly</span
+                >
+                <span class="timestamp text-muted">Posted 4 hours ago</span>
+              </div>
+              <p class="discussion-content">
+                I agree with
+                <span class="username" data-username="michael_scott"
+                  >@Michael Scott</span
+                >. The UI is much cleaner now.
+                <span class="username" data-username="dwight_schrute"
+                  >@Dwight Schrute</span
+                >
+                and I worked on some mockups last week.
+              </p>
+              <div class="discussion-footer">
+                <span class="action-link"
+                  ><i class="far fa-thumbs-up mr-1"></i>Like</span
+                >
+                <span class="action-link"
+                  ><i class="far fa-comment mr-1"></i>Reply</span
+                >
+              </div>
+            </div>
+
+            <div class="discussion-item">
+              <div class="discussion-header">
+                <img
+                  src="https://randomuser.me/api/portraits/men/22.jpg"
+                  alt="User Avatar"
+                  class="avatar-small"
+                />
+                <span class="username" data-username="dwight_schrute"
+                  >Dwight Schrute</span
+                >
+                <span class="timestamp text-muted">Posted 6 hours ago</span>
+              </div>
+              <p class="discussion-content">
+                Fact: This application has increased productivity by 15%.
+                <span class="username" data-username="jim_halpert"
+                  >@Jim Halpert</span
+                >
+                even admitted it works better than expected.
+              </p>
+              <div class="discussion-footer">
+                <span class="action-link"
+                  ><i class="far fa-thumbs-up mr-1"></i>Like</span
+                >
+                <span class="action-link"
+                  ><i class="far fa-comment mr-1"></i>Reply</span
+                >
+              </div>
+            </div>
+
+            <div class="discussion-item">
+              <div class="discussion-header">
+                <img
+                  src="https://randomuser.me/api/portraits/men/42.jpg"
+                  alt="User Avatar"
+                  class="avatar-small"
+                />
+                <span class="username" data-username="jim_halpert"
+                  >Jim Halpert</span
+                >
+                <span class="timestamp text-muted">Posted yesterday</span>
+              </div>
+              <p class="discussion-content">
+                Has anyone had issues with the export feature? I tried
+                downloading my report but got an error.
+                <span class="username" data-username="angela_martin"
+                  >@Angela Martin</span
+                >
+                mentioned that finance was having similar problems.
+              </p>
+              <div class="discussion-footer">
+                <span class="action-link"
+                  ><i class="far fa-thumbs-up mr-1"></i>Like</span
+                >
+                <span class="action-link"
+                  ><i class="far fa-comment mr-1"></i>Reply</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profile card container (hidden cards will be here) -->
+      <div id="profileCardContainer"></div>
+      <!-- Code ends here -->
+    </div>
+    <div class="container social mt-5">
+      <a
+        href="https://www.instagram.com/reel/DKE4NIpJdPK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        target="_blank"
+        class="btn btn-outline-primary"
+      >
+        <i class="fab fa-instagram"></i> Watch Instagram Video
+      </a>
+      <a
+        href="https://www.youtube.com/@SpecsyCoder"
+        target="_blank"
+        class="btn btn-outline-danger"
+      >
+        <i class="fab fa-youtube"></i> Visit YouTube Channel
+      </a>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Flip Effect</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <!-- Code starts from here -->
+      <div class="row mb-4">
+        <div class="col-12 text-center">
+          <h2 class="mb-3">Team Members</h2>
+          <p class="text-muted">
+            Click on any card to flip and see more details
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="https://randomuser.me/api/portraits/women/32.jpg"
+                  alt="Team Member"
+                />
+                <div class="card-caption">
+                  <h5>Sarah Johnson</h5>
+                  <p>UI/UX Designer</p>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <h5>Sarah Johnson</h5>
+                <p class="title">UI/UX Designer</p>
+                <p>
+                  5 years of experience creating beautiful interfaces that users
+                  love.
+                </p>
+                <div class="social-icons">
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+                <button class="btn btn-light btn-sm mt-3">
+                  View Portfolio
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="https://randomuser.me/api/portraits/men/32.jpg"
+                  alt="Team Member"
+                />
+                <div class="card-caption">
+                  <h5>Michael Chen</h5>
+                  <p>Frontend Developer</p>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <h5>Michael Chen</h5>
+                <p class="title">Frontend Developer</p>
+                <p>
+                  Specialist in React and Vue.js with a passion for clean code.
+                </p>
+                <div class="social-icons">
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+                <button class="btn btn-light btn-sm mt-3">View Projects</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="https://randomuser.me/api/portraits/women/44.jpg"
+                  alt="Team Member"
+                />
+                <div class="card-caption">
+                  <h5>Emma Davis</h5>
+                  <p>Product Manager</p>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <h5>Emma Davis</h5>
+                <p class="title">Product Manager</p>
+                <p>
+                  Strategic thinker who transforms ideas into successful
+                  products.
+                </p>
+                <div class="social-icons">
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+                <button class="btn btn-light btn-sm mt-3">Contact Me</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Code ends here -->
+    </div>
+
+    <div class="container social mt-5">
+      <a
+        href="https://www.instagram.com/reel/DITlCnNJF_D/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        target="_blank"
+        class="btn btn-outline-primary"
+      >
+        <i class="fab fa-instagram"></i> Watch Instagram Video
+      </a>
+      <a
+        href="https://www.youtube.com/@SpecsyCoder"
+        target="_blank"
+        class="btn btn-outline-danger"
+      >
+        <i class="fab fa-youtube"></i> Visit YouTube Channel
+      </a>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

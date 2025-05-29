@@ -1,0 +1,87 @@
+.task-tracker {
+  max-width: 800px;
+}
+
+.task-item {
+  transition: background-color 0.3s;
+}
+
+.task-item.completed {
+  background-color: #f8f9fa;
+}
+
+.task-item:hover {
+  background-color: #f1f3f5;
+}
+
+.priority-badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.priority-badge.high {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.priority-badge.medium {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.priority-badge.low {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.priority-high {
+  border-left: 4px solid #dc3545;
+}
+
+.priority-medium {
+  border-left: 4px solid #ffc107;
+}
+
+.priority-low {
+  border-left: 4px solid #17a2b8;
+}
+
+.input-group .form-control:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#prioritySelect {
+  max-width: 150px;
+  border-radius: 0;
+}
+
+#taskCount {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-group>* {
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+
+  #prioritySelect {
+    max-width: 100%;
+  }
+
+  .input-group-append {
+    width: 100%;
+  }
+
+  .input-group-append button {
+    width: 100%;
+  }
+}

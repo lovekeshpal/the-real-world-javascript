@@ -1,0 +1,107 @@
+/* Accordion container styling */
+.accordion-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Accordion item styling */
+.accordion-item {
+    margin-bottom: 15px;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.accordion-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #343a40;
+}
+
+.accordion-item.active .accordion-header {
+    background-color: #e9ecef;
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Icon styling */
+.accordion-icon {
+    font-size: 14px;
+    color: #6c757d;
+    transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-icon {
+    transform: rotate(180deg);
+    color: #007bff;
+}
+
+/* Content panel styling */
+.accordion-content {
+    max-height: 0;
+    padding: 0 20px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 1000px;
+    /* Large enough to contain content */
+    padding: 20px;
+}
+
+/* Content styling */
+.accordion-content p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.accordion-content p:last-child,
+.accordion-content ul:last-child,
+.accordion-content ol:last-child {
+    margin-bottom: 0;
+}
+
+.accordion-content ul,
+.accordion-content ol {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.accordion-content li {
+    margin-bottom: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .accordion-header {
+        padding: 12px 15px;
+    }
+
+    .accordion-header h3 {
+        font-size: 16px;
+    }
+
+    .accordion-item.active .accordion-content {
+        padding: 15px;
+    }
+}

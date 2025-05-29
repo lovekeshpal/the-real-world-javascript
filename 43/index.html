@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trending Movies Carousel</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <!-- Code starts from here -->
+      <div class="trending-movies">
+        <div
+          class="section-header d-flex justify-content-between align-items-center mb-4"
+        >
+          <h2><i class="fas fa-fire text-danger mr-2"></i>Trending Movies</h2>
+          <div class="carousel-controls">
+            <button id="prevBtn" class="btn btn-outline-secondary mr-2">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button id="nextBtn" class="btn btn-outline-secondary">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="position-relative">
+          <!-- Loading spinner -->
+          <div id="loadingSpinner" class="text-center py-5">
+            <div class="spinner-border text-primary" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+            <p class="mt-2">Fetching trending movies...</p>
+          </div>
+
+          <!-- Error message -->
+          <div
+            id="errorContainer"
+            class="alert alert-danger"
+            style="display: none"
+          >
+            Unable to load trending movies. Please try again later.
+          </div>
+
+          <!-- Movies carousel -->
+          <div id="moviesCarousel" class="movies-carousel">
+            <div id="moviesTrack" class="movies-track">
+              <!-- Movies will be added here dynamically -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Code ends here -->
+    </div>
+    <!-- Movie Details Modal -->
+    <div
+      class="modal fade"
+      id="movieModal"
+      tabindex="-1"
+      aria-labelledby="movieModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="movieModalLabel">Movie Details</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-5">
+                <img
+                  id="modalPoster"
+                  src=""
+                  alt="Movie Poster"
+                  class="img-fluid rounded"
+                />
+              </div>
+              <div class="col-md-7">
+                <h3 id="modalTitle"></h3>
+                <div id="modalRating" class="mb-2"></div>
+                <p>
+                  <strong>Release Date:</strong>
+                  <span id="modalReleaseDate"></span>
+                </p>
+                <p id="modalOverview"></p>
+                <div id="modalGenres" class="mb-3"></div>
+                <a
+                  id="modalTrailer"
+                  href="#"
+                  class="btn btn-danger"
+                  target="_blank"
+                >
+                  <i class="fab fa-youtube mr-2"></i>Watch Trailer
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container social mt-5">
+      <a
+        href="https://www.instagram.com/reel/DI6rqrpT2ic/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        target="_blank"
+        class="btn btn-outline-primary"
+      >
+        <i class="fab fa-instagram"></i> Watch Instagram Video
+      </a>
+      <a
+        href="https://www.youtube.com/@SpecsyCoder"
+        target="_blank"
+        class="btn btn-outline-danger"
+      >
+        <i class="fab fa-youtube"></i> Visit YouTube Channel
+      </a>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

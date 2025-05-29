@@ -1,0 +1,81 @@
+.preview-container {
+  background-color: white;
+  border-radius: 6px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.preview-text {
+  transition: all 0.3s ease;
+}
+
+.font-small {
+  font-size: 14px;
+}
+
+.font-medium {
+  font-size: 18px;
+}
+
+.font-large {
+  font-size: 24px;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.font-underline {
+  text-decoration: underline;
+}
+
+.controls label {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.btn-outline-secondary.active,
+.btn-outline-secondary:active {
+  background-color: #6c757d;
+  color: white;
+}
+
+.current-styles {
+  font-size: 0.9rem;
+}
+
+.style-info {
+  list-style: none;
+  padding-left: 0;
+}
+
+.style-info li {
+  margin-bottom: 5px;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  border-radius: 5px 5px 0 0 !important;
+}
+
+.preview-change {
+  animation: highlight 0.5s ease;
+}
+
+@keyframes highlight {
+  0% {
+    background-color: rgba(0, 123, 255, 0.1);
+  }
+
+  100% {
+    background-color: white;
+  }
+}

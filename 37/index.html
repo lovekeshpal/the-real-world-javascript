@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font Style Previewer</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <!-- Code starts from here -->
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+              <h4 class="mb-0">Font Style Previewer</h4>
+            </div>
+            <div class="card-body">
+              <div class="controls mb-4">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="font-family">Font Family</label>
+                    <select id="font-family" class="form-control">
+                      <option value="Arial, sans-serif">Arial</option>
+                      <option value="'Times New Roman', serif">
+                        Times New Roman
+                      </option>
+                      <option value="Georgia, serif">Georgia</option>
+                      <option value="'Courier New', monospace">
+                        Courier New
+                      </option>
+                      <option value="Verdana, sans-serif">Verdana</option>
+                      <option value="Impact, sans-serif">Impact</option>
+                      <option value="'Comic Sans MS', cursive">
+                        Comic Sans MS
+                      </option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label>Font Size</label>
+                    <div
+                      class="btn-group btn-group-toggle w-100"
+                      data-toggle="buttons"
+                    >
+                      <label class="btn btn-outline-secondary">
+                        <input
+                          type="radio"
+                          name="font-size"
+                          data-size="small"
+                        />
+                        Small
+                      </label>
+                      <label class="btn btn-outline-secondary active">
+                        <input
+                          type="radio"
+                          name="font-size"
+                          data-size="medium"
+                          checked
+                        />
+                        Medium
+                      </label>
+                      <label class="btn btn-outline-secondary">
+                        <input
+                          type="radio"
+                          name="font-size"
+                          data-size="large"
+                        />
+                        Large
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="font-styles mt-3">
+                  <label>Font Styles</label>
+                  <div class="btn-group" role="group">
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary"
+                      data-style="bold"
+                    >
+                      <i class="fas fa-bold"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary"
+                      data-style="italic"
+                    >
+                      <i class="fas fa-italic"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary"
+                      data-style="underline"
+                    >
+                      <i class="fas fa-underline"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="preview-container border p-4">
+                <div id="preview-text" class="preview-text font-medium">
+                  <p>The quick brown fox jumps over the lazy dog.</p>
+                  <p>Pack my box with five dozen liquor jugs.</p>
+                  <p>How vexingly quick daft zebras jump!</p>
+                </div>
+              </div>
+
+              <div class="current-styles mt-3">
+                <div class="card bg-light">
+                  <div class="card-body">
+                    <h5 class="card-title">Current Styling</h5>
+                    <ul class="style-info mb-0">
+                      <li>
+                        <strong>Font:</strong>
+                        <span id="current-font">Arial</span>
+                      </li>
+                      <li>
+                        <strong>Size:</strong>
+                        <span id="current-size">Medium</span>
+                      </li>
+                      <li>
+                        <strong>Styles:</strong>
+                        <span id="current-styles">None</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Code ends here -->
+    </div>
+
+    <div class="container social mt-5">
+      <a
+        href="https://www.instagram.com/reel/DIJu3s9zYJl/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        target="_blank"
+        class="btn btn-outline-primary"
+      >
+        <i class="fab fa-instagram"></i> Watch Instagram Video
+      </a>
+      <a
+        href="https://www.youtube.com/@SpecsyCoder"
+        target="_blank"
+        class="btn btn-outline-danger"
+      >
+        <i class="fab fa-youtube"></i> Visit YouTube Channel
+      </a>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

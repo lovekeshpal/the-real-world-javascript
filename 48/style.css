@@ -1,0 +1,163 @@
+/* Container for textarea and dropdown */
+.comment-container {
+    position: relative;
+}
+
+/* Mention dropdown styling */
+.mention-dropdown {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    width: 300px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    display: none;
+}
+
+.dropdown-header {
+    padding: 8px 12px;
+    background-color: #f6f8fa;
+    border-bottom: 1px solid #e1e4e8;
+    font-weight: 500;
+    font-size: 13px;
+    color: #586069;
+}
+
+.mention-list {
+    max-height: 168px;
+    overflow-y: auto;
+}
+
+/* User suggestion item */
+.user-suggestion {
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid #f1f1f1;
+    transition: background-color 0.2s;
+}
+
+.user-suggestion:hover,
+.user-suggestion.active {
+    background-color: #f1f8ff;
+}
+
+.user-suggestion:last-child {
+    border-bottom: none;
+}
+
+.user-avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.user-info {
+    flex: 1;
+}
+
+.user-name {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.user-handle {
+    color: #6a737d;
+    font-size: 12px;
+}
+
+/* Comment styling */
+.comment-item {
+    padding: 15px;
+    border-bottom: 1px solid #e1e4e8;
+    margin-bottom: 15px;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.commenter-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.commenter-name {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.comment-timestamp {
+    color: #586069;
+    font-size: 12px;
+    margin-left: auto;
+}
+
+.comment-content {
+    line-height: 1.5;
+}
+
+/* Mention styling in comments */
+.user-mention {
+    display: inline-block;
+    background-color: #e1f3ff;
+    color: #0366d6;
+    border-radius: 3px;
+    padding: 0 3px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.user-mention:hover {
+    background-color: #cce7ff;
+    text-decoration: none;
+}
+
+/* User cards */
+.user-card {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.user-card-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    object-fit: cover;
+    border: 3px solid #f1f1f1;
+    transition: all 0.3s ease;
+}
+
+.user-card:hover .user-card-img {
+    transform: scale(1.05);
+    border-color: #007bff;
+}
+
+/* Animation for dropdown */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.mention-dropdown.show {
+    display: block;
+    animation: fadeIn 0.2s ease forwards; }

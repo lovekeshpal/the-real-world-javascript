@@ -1,0 +1,63 @@
+/* General form styling */
+#celebrationForm label {
+    font-weight: 500;
+}
+
+/* Confetti container */
+#confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+/* Confetti pieces */
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+    transform-origin: center;
+}
+
+/* Different shapes for confetti */
+.confetti.square {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.confetti.triangle {
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.confetti.circle {
+    border-radius: 50%;
+}
+
+/* Success message fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#successMessage {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* Card hover effect */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Strength Meter</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <!-- Code starts from here -->
+      <div class="password-meter-container">
+        <div class="card">
+          <div class="card-header bg-primary text-white">
+            <h4 class="mb-0">Create a Strong Password</h4>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="passwordInput">Password</label>
+                <div class="input-group">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="passwordInput"
+                    placeholder="Enter your password"
+                  />
+                  <div class="input-group-append">
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary toggle-password"
+                    >
+                      <i class="fa fa-eye"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Password strength meter -->
+              <div class="password-strength-meter mt-3">
+                <div class="progress">
+                  <div
+                    id="strength-meter"
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0%"
+                    aria-valuenow="0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <div class="text-right mt-1">
+                  <small id="strength-text">Password strength: None</small>
+                </div>
+              </div>
+
+              <!-- Requirements list -->
+              <div class="password-requirements mt-3">
+                <p class="mb-2">Your password should have:</p>
+                <ul class="requirements-list">
+                  <li id="req-length" class="requirement">
+                    <i class="fa fa-times-circle text-danger"></i> At least 8
+                    characters
+                  </li>
+                  <li id="req-lowercase" class="requirement">
+                    <i class="fa fa-times-circle text-danger"></i> Lowercase
+                    letters (a-z)
+                  </li>
+                  <li id="req-uppercase" class="requirement">
+                    <i class="fa fa-times-circle text-danger"></i> Uppercase
+                    letters (A-Z)
+                  </li>
+                  <li id="req-numbers" class="requirement">
+                    <i class="fa fa-times-circle text-danger"></i> Numbers (0-9)
+                  </li>
+                  <li id="req-special" class="requirement">
+                    <i class="fa fa-times-circle text-danger"></i> Special
+                    characters (!@#$%^&*)
+                  </li>
+                </ul>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Code ends here -->
+    </div>
+
+    <div class="container social mt-5">
+      <a
+        href="https://www.instagram.com/reel/DH8aM0YplO_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        target="_blank"
+        class="btn btn-outline-primary"
+      >
+        <i class="fab fa-instagram"></i> Watch Instagram Video
+      </a>
+      <a
+        href="https://www.youtube.com/@SpecsyCoder"
+        target="_blank"
+        class="btn btn-outline-danger"
+      >
+        <i class="fab fa-youtube"></i> Visit YouTube Channel
+      </a>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async Await - E-Commerce</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <!-- Code starts from here -->
+      <header class="mb-4">
+        <div class="d-flex justify-content-between align-items-center">
+          <h1>Async Shop</h1>
+          <div class="cart-container">
+            <button
+              class="btn btn-outline-primary position-relative"
+              id="cartBtn"
+            >
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-badge" id="cartCount">0</span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Status message container -->
+      <div id="statusMessage" class="alert d-none"></div>
+
+      <!-- Products section -->
+      <div class="row">
+        <div class="col-md-9">
+          <div class="card">
+            <div
+              class="card-header d-flex justify-content-between align-items-center"
+            >
+              <h5 class="mb-0">Products</h5>
+              <div class="dropdown">
+                <button
+                  class="btn btn-sm btn-outline-secondary dropdown-toggle"
+                  id="sortDropdown"
+                  data-toggle="dropdown"
+                >
+                  Sort by
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#" data-sort="name-asc"
+                    >Name (A-Z)</a
+                  >
+                  <a class="dropdown-item" href="#" data-sort="name-desc"
+                    >Name (Z-A)</a
+                  >
+                  <a class="dropdown-item" href="#" data-sort="price-asc"
+                    >Price (Low to High)</a
+                  >
+                  <a class="dropdown-item" href="#" data-sort="price-desc"
+                    >Price (High to Low)</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <!-- Loading spinner -->
+              <div id="loadingSpinner" class="text-center py-5">
+                <div class="spinner-border text-primary" role="status">
+                  <span class="sr-only">Loading products...</span>
+                </div>
+                <p class="mt-2">Loading products...</p>
+              </div>
+
+              <!-- Products container -->
+              <div id="productsContainer" class="row"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cart section -->
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-header bg-primary text-white">
+              <h5 class="mb-0">Your Cart</h5>
+            </div>
+            <div class="card-body">
+              <div id="cartItems">
+                <p id="emptyCartMessage" class="text-muted text-center">
+                  Your cart is empty
+                </p>
+                <!-- Cart items will be added here -->
+              </div>
+              <div id="cartSummary" class="mt-3 d-none">
+                <hr />
+                <div class="d-flex justify-content-between">
+                  <span>Subtotal:</span>
+                  <span id="cartSubtotal">$0.00</span>
+                </div>
+                <button id="checkoutBtn" class="btn btn-success btn-block mt-3">
+                  <i class="fas fa-credit-card mr-2"></i>Checkout
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product detail modal -->
+      <div
+        class="modal fade"
+        id="productModal"
+        tabindex="-1"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalTitle">Product Details</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div id="modalLoading" class="text-center py-4">
+                <div class="spinner-border text-primary" role="status"></div>
+                <p class="mt-2">Loading product details...</p>
+              </div>
+              <div id="modalContent" class="row d-none">
+                <div class="col-md-5">
+                  <img
+                    id="modalImage"
+                    src=""
+                    alt="Product"
+                    class="img-fluid rounded"
+                  />
+                </div>
+                <div class="col-md-7">
+                  <h4 id="modalProductName"></h4>
+                  <div class="mb-3">
+                    <span id="modalPrice" class="h5 text-primary"></span>
+                  </div>
+                  <div id="modalStock" class="mb-3"></div>
+                  <p id="modalDescription"></p>
+                  <div class="d-flex align-items-center">
+                    <div class="input-group mr-3" style="width: 130px">
+                      <div class="input-group-prepend">
+                        <button
+                          class="btn btn-outline-secondary"
+                          id="decreaseQuantity"
+                        >
+                          -
+                        </button>
+                      </div>
+                      <input
+                        type="number"
+                        id="modalQuantity"
+                        class="form-control text-center"
+                        value="1"
+                        min="1"
+                        max="10"
+                      />
+                      <div class="input-group-append">
+                        <button
+                          class="btn btn-outline-secondary"
+                          id="increaseQuantity"
+                        >
+                          +
+                        </button>
+                      </div>
+                    </div>
+                    <button id="modalAddToCart" class="btn btn-primary">
+                      <i class="fas fa-cart-plus mr-2"></i>Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Code ends here -->
+    </div>
+    <div class="container social mt-5">
+      <a
+        href="https://www.instagram.com/reel/DJZhAaopNyd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        target="_blank"
+        class="btn btn-outline-primary"
+      >
+        <i class="fab fa-instagram"></i> Watch Instagram Video
+      </a>
+      <a
+        href="https://www.youtube.com/@SpecsyCoder"
+        target="_blank"
+        class="btn btn-outline-danger"
+      >
+        <i class="fab fa-youtube"></i> Visit YouTube Channel
+      </a>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

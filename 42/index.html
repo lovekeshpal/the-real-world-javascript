@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Image Zoom</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <!-- Code starts from here -->
+      <div class="row mb-4">
+        <div class="col-12 text-center">
+          <h2>Product Showcase</h2>
+          <p class="text-muted">Hover over the images to see the zoom effect</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Product 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="product-card">
+            <div class="product-image-container">
+              <img
+                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+                alt="Headphones"
+                class="product-image"
+              />
+              <div class="product-overlay">
+                <div class="overlay-content">
+                  <h5>Premium Headphones</h5>
+                  <p>Wireless noise-cancelling</p>
+                  <button class="btn btn-sm btn-light">Quick View</button>
+                </div>
+              </div>
+            </div>
+            <div class="product-info">
+              <h5>Premium Headphones</h5>
+              <p class="product-price">$299.99</p>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span class="rating-count">(42)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="product-card">
+            <div class="product-image-container">
+              <img
+                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+                alt="Smart Watch"
+                class="product-image"
+              />
+              <div class="product-overlay">
+                <div class="overlay-content">
+                  <h5>Smart Watch</h5>
+                  <p>GPS, heart rate monitor</p>
+                  <button class="btn btn-sm btn-light">Quick View</button>
+                </div>
+              </div>
+            </div>
+            <div class="product-info">
+              <h5>Smart Watch</h5>
+              <p class="product-price">$199.99</p>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span class="rating-count">(28)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="product-card">
+            <div class="product-image-container">
+              <img
+                src="https://images.unsplash.com/photo-1507646227500-4d389b0012be"
+                alt="Smart Speaker"
+                class="product-image"
+              />
+              <div class="product-overlay">
+                <div class="overlay-content">
+                  <h5>Smart Speaker</h5>
+                  <p>Voice control, premium sound</p>
+                  <button class="btn btn-sm btn-light">Quick View</button>
+                </div>
+              </div>
+            </div>
+            <div class="product-info">
+              <h5>Smart Speaker</h5>
+              <p class="product-price">$149.99</p>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+                <span class="rating-count">(16)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Code ends here -->
+    </div>
+    <!-- Product Quick View Modal -->
+    <div
+      class="modal fade"
+      id="quickViewModal"
+      tabindex="-1"
+      aria-labelledby="quickViewModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="quickViewModalLabel">
+              Product Quick View
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src=""
+                  alt="Product Image"
+                  id="modalProductImage"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-md-6">
+                <h3 id="modalProductTitle"></h3>
+                <p
+                  class="text-danger font-weight-bold"
+                  id="modalProductPrice"
+                ></p>
+                <div id="modalProductRating" class="mb-3"></div>
+                <p id="modalProductDescription" class="mb-4"></p>
+
+                <div class="form-group">
+                  <label for="productQuantity">Quantity:</label>
+                  <div class="input-group" style="max-width: 130px">
+                    <div class="input-group-prepend">
+                      <button
+                        class="btn btn-outline-secondary"
+                        type="button"
+                        id="quantityMinus"
+                      >
+                        -
+                      </button>
+                    </div>
+                    <input
+                      type="number"
+                      class="form-control text-center"
+                      id="productQuantity"
+                      value="1"
+                      min="1"
+                    />
+                    <div class="input-group-append">
+                      <button
+                        class="btn btn-outline-secondary"
+                        type="button"
+                        id="quantityPlus"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="btn btn-primary btn-lg mt-3">
+                  <i class="fas fa-shopping-cart mr-2"></i>Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container social mt-5">
+      <a
+        href="https://www.instagram.com/reel/DIrQXa2T-xR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        target="_blank"
+        class="btn btn-outline-primary"
+      >
+        <i class="fab fa-instagram"></i> Watch Instagram Video
+      </a>
+      <a
+        href="https://www.youtube.com/@SpecsyCoder"
+        target="_blank"
+        class="btn btn-outline-danger"
+      >
+        <i class="fab fa-youtube"></i> Visit YouTube Channel
+      </a>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

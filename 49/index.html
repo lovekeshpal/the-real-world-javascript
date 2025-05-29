@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comment Thread System</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <!-- Code starts from here -->
+      <div class="comment-system">
+        <div class="card mb-4">
+          <div
+            class="card-header bg-primary text-white d-flex align-items-center"
+          >
+            <i class="fas fa-comments mr-2"></i>
+            <h4 class="mb-0">Discussion Thread</h4>
+          </div>
+          <div class="card-body">
+            <div class="article-preview mb-4 p-3 bg-light rounded">
+              <h5>How to Master JavaScript in 2023</h5>
+              <p class="mb-0">
+                JavaScript continues to evolve with new features and frameworks.
+                This article covers the essential skills every developer should
+                know...
+              </p>
+            </div>
+
+            <!-- Comment Form -->
+            <div class="comment-form mb-4">
+              <h5>Add a Comment</h5>
+              <form id="mainCommentForm">
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <img
+                          src="https://randomuser.me/api/portraits/men/41.jpg"
+                          alt="Your Avatar"
+                          class="avatar-small"
+                        />
+                      </span>
+                    </div>
+                    <textarea
+                      id="mainCommentText"
+                      class="form-control"
+                      rows="2"
+                      placeholder="Share your thoughts..."
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane mr-2"></i>Post Comment
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Comment Stats -->
+            <div class="comment-stats mb-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <span
+                    id="commentCount"
+                    class="badge badge-pill badge-secondary"
+                    >0 comments</span
+                  >
+                  <div class="btn-group btn-group-sm ml-2">
+                    <button
+                      id="sortNewest"
+                      class="btn btn-outline-secondary active"
+                    >
+                      Newest
+                    </button>
+                    <button id="sortOldest" class="btn btn-outline-secondary">
+                      Oldest
+                    </button>
+                    <button id="sortPopular" class="btn btn-outline-secondary">
+                      Popular
+                    </button>
+                  </div>
+                </div>
+                <button
+                  id="expandAllBtn"
+                  class="btn btn-sm btn-outline-primary"
+                >
+                  <i class="fas fa-angle-double-down mr-1"></i>Expand All
+                </button>
+              </div>
+            </div>
+
+            <!-- Comment List -->
+            <div id="commentList" class="comment-list">
+              <!-- Comments will be added here dynamically -->
+              <div class="text-center text-muted my-4" id="noCommentsMessage">
+                <i class="fas fa-comments fa-2x mb-2"></i>
+                <p>No comments yet. Be the first to share your thoughts!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Code ends here -->
+    </div>
+    <div class="container social mt-5">
+      <a
+        href="https://www.instagram.com/reel/DJ6jMcsJKbA/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        target="_blank"
+        class="btn btn-outline-primary"
+      >
+        <i class="fab fa-instagram"></i> Watch Instagram Video
+      </a>
+      <a
+        href="https://www.youtube.com/@SpecsyCoder"
+        target="_blank"
+        class="btn btn-outline-danger"
+      >
+        <i class="fab fa-youtube"></i> Visit YouTube Channel
+      </a>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
